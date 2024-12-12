@@ -65,11 +65,15 @@ body {
 
 .card-slot {
     margin-top: 20px;
-    padding: 10px;
+    padding: 5px;
     background-color: #333c3f;
     color: white;
     border-radius: 10px;
     cursor: pointer;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .card-slot:hover {
