@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #9bde8c;
+}
+
+.atm-container {
+    background: rgb(61, 205, 71);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid pink;
+}
+
+.atm-title {
+    font-size: 48px;
+    color: #fff;
+}
+
+.atm-screen {
+    background: rgb(202, 197, 197);
+    color: rgb(241, 247, 241);
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(98, 225, 98);
+    border-radius: 15px;
+}
+
+.keypad {
+    margin-top: 20px;
+}
+
+.row-one {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.key {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333c3f;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.key:hover {
+    background-color: #555;
+}
+
+.card-slot {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333c3f;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-slot:hover {
+    background-color: #555;
+}
+
+.btn-selector {
+    margin: 5px;
+    padding: 10px;
+    background-color: #333c3f;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-selector:hover {
+    background-color: green;
+}
+
+.bal-container {
+    margin-top: 20px;
+    font-size: 18px;
+}

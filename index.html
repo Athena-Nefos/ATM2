@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="atm-container">
+        <div class="atm-title">ATM</div>
+
+        <div class="atm-body">
+            <!-- top Button Container for ATM Options -->
+            <div class="btn-top-container">
+                <div class="btn-selector" data-action="deposit">Deposit</div>
+                <div class="btn-selector" data-action="withdraw">Withdraw</div>
+                <div class="btn-selector" data-action="check-balance">Check Balance</div>
+            </div>
+
+            <!-- ATM Screen -->
+            <div class="screen">
+                <div class="main-display">
+                    <div class="atm-screen" id="atmScreen">
+                        <!-- This is where balances and messages will be displayed -->
+                    </div>
+                    <!-- PIN #1234 -->
+                </div>
+            </div>
+
+            <!-- Bottom Button Container Switch Account -->
+            <div class="btn-bottom-container">
+                <div class="btn-selector" id="switch-account">Switch Account</div>
+            </div>
+        </div>
+
+        <hr />
+        <!-- Balance Information -->
+        <div class="bal-container" id="balanceContainer" style="display:none;">
+            <p class="acctn">Checking Account: $<span id="checkingBalance">1000</span></p>
+            <p class="acctn">Savings Account: $<span id="savingsBalance">5000</span></p>
+        </div>
+
+        <!-- Keypad for PIN and other inputs -->
+        <div class="keypad">
+            <div class="row-one">
+                <div class="key" data-value="1">1</div>
+                <div class="key" data-value="2">2</div>
+                <div class="key" data-value="3">3</div>
+            </div>
+            <div class="row-one">
+                <div class="key" data-value="4">4</div>
+                <div class="key" data-value="5">5</div>
+                <div class="key" data-value="6">6</div>
+            </div>
+            <div class="row-one">
+                <div class="key" data-value="7">7</div>
+                <div class="key" data-value="8">8</div>
+                <div class="key" data-value="9">9</div>
+            </div>
+            <div class="row-one">
+                <div class="key" data-value="CLR">CLR</div>
+                <div class="key" data-value="0">0</div>
+                <div class="key" data-value="ENTER">ENTER</div>
+            </div>
+
+            <div class="card-slot" id="cardSlot">Insert Card</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
